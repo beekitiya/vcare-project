@@ -1,0 +1,62 @@
+page-login {
+    .app-background {
+        background-image: url(../assets/imgs/BG.png);
+        background-size: cover;
+    }
+
+    .app-logo {
+        height: 150px;
+        width: auto;
+        position: absolute;
+        top: 17%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .login-form {
+        ion-item:first-child {
+            margin-top: 20em;
+            border-radius: 5px;
+            border-radius: 5px;
+        }
+        ion-item:last-child {
+            margin-top: 10px;
+            border-radius: 5px;
+            border-radius: 5px;
+        }
+        ion-item.item {
+            width: 85%;
+            height: 40px;
+            left: 50%;
+            transform: translate(-50%);
+            background-color: rgba(207, 237, 216, 0.2);
+            .label {
+                width: 10%;
+                color: #cfedd8;
+                font-size: 1.2em;
+            }
+            ::placeholder {
+                color: #cfedd8;
+                font-size: 14px;
+            }
+        }
+        button[type=submit] {
+            background-color: color($colors,button-color);
+            font-size: 14px;
+            width: 85%;
+            height: 40px;
+            left: 50%;
+            transform: translate(-50%);
+            box-shadow: none;
+            font-weight: 400;
+        }
+        button[type=submit]:hover {
+            background-color: color($colors,button-color);
+        }
+        .signup-button {
+            font-size: 14px;
+            padding-bottom: 10px;
+            padding-left: 1px;
+        }
+    }
+}

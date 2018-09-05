@@ -1,0 +1,33 @@
+<ion-content class="app-background">
+    <img class="app-logo" src="../assets/imgs/logo.png">
+
+    <div class="login-form">
+        <form>
+            <ion-list>
+                <ion-item>
+                    <ion-label><ion-icon name="ios-mail" item-left></ion-icon></ion-label>
+                    <ion-input type="text" placeholder="Email"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label><ion-icon name="ios-lock" item-left></ion-icon></ion-label>
+                    <ion-input type="text" placeholder="Password"></ion-input>
+                </ion-item>
+            </ion-list>
+            <ion-row>
+                <ion-col text-center>
+                    <button ion-button block type="submit">
+                        SIGN IN
+                    </button>
+                </ion-col>
+            </ion-row>
+            <ion-row style="margin-top:-25px">
+                <ion-col text-center>
+                    <p style="color:#ffffff">
+                        Don't have an account?
+                        <button ion-button clear class="signup-button" type="button" color="button-color" (click)="forgetPasswordModal()"><u>SIGN UP!</u></button>
+                    </p>
+                </ion-col>
+            </ion-row>
+        </form>
+    </div>
+</ion-content>
